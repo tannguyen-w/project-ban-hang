@@ -1,3 +1,5 @@
+@use "../abstrasts";
+
 *,
 ::before,
 ::after {
@@ -18,12 +20,15 @@ body {
 a {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
 
 button {
     border: none;
     outline: none;
     background: transparent;
+    padding: 0;
+    cursor: pointer;
 }
 
 a,
@@ -39,4 +44,11 @@ select {
 
 .icon {
     filter: var(--icon-color);
+}
+
+.container {
+    @include abstrasts.screen(sm) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
 }
