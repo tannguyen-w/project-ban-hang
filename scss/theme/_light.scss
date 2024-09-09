@@ -6,6 +6,8 @@ html {
         contrast(100%);
     --body-bg: #f6f6f6;
     --header-bg-color: #eee;
+    --footer-bg-color: var(--header-bg-color);
+
     --top-act-group-bg-color: #fff;
     --top-act-group-shadow: rgba(237, 237, 246, 0.2);
     --top-act-group-separate-color: #ededf6;
@@ -41,4 +43,17 @@ html {
     // Product
     --product-card-bg: #fff;
     --product-card-shadow: rgba(237, 237, 246, 0.2);
+
+    // Filter form
+    --filter-form-bg: #fff;
+    --filter-form-shadow: rgba(200, 200, 200, 0.4);
+    --filter-form-tag-bg: #f8f8fb;
+
+    // Auth
+    --auth-intro-bg: #fafafd;
+    --auth-content-bg: #fff;
+
+    // Form
+    --form-border-color: #d2d1d6;
+    --form-text-color: #9e9da8;
 }
