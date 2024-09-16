@@ -45,9 +45,9 @@ html {
     --product-card-shadow: rgba(237, 237, 246, 0.2);
 
     // Filter form
-    --filter-form-bg: #fff;
+    --form-tag-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.4);
-    --filter-form-tag-bg: #f8f8fb;
+    --form-tag-bg: #f8f8fb;
 
     // Auth
     --auth-intro-bg: #fafafd;
@@ -56,4 +56,42 @@ html {
     // Form
     --form-border-color: #d2d1d6;
     --form-text-color: #9e9da8;
+
+    // Product detail
+    --product-detail-bg: #fff;
+    --product-detail-info-bg: #f6f6f6;
+    --product-detail-info-content-bg: transparent;
+    --product-detail-tag-bg: #ededf6;
+
+    @include abstrasts.screen(md) {
+        --product-detail-bg: #fafafd;
+    }
+
+    @include abstrasts.screen(md) {
+        --product-detail-info-bg: #fff;
+    }
+
+    --prod-info-container-bg: #fff;
+    --prod-info-price-color: #000;
+    --prod-info-total-price-color: var(--prod-info-price-color);
+
+    // Breadcrumbs
+    --breadcrumbs-bg: #f6f6f6;
+    --breadcrumbs-shadow: rgba(237, 237, 246, 0.2);
+    @include abstrasts.screen(md) {
+        --breadcrumbs-bg: #fff;
+    }
+
+    // Search bar
+    --search-bar-bg: #fff;
+    --search-bar-input-color: #9e9da8;
+
+    // Review card
+    --review-card-bg: #fafafd;
+    @include abstrasts.screen(md) {
+        --review-card-bg: #fff;
+    }
+
+    // Text content
+    --text-content-hr-bg: #ebebeb;
 }

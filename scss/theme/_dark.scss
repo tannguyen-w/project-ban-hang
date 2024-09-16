@@ -46,9 +46,9 @@ html.dark {
     --product-card-shadow: rgba(0, 0, 0, 0.2);
 
     // Filter form
-    --filter-form-bg: var(--dropdown-bg-color);
+    --form-tag-bg: var(--dropdown-bg-color);
     --filter-form-shadow: rgba(0, 0, 0, 0.4);
-    --filter-form-tag-bg: #171c28;
+    --form-tag-bg: #171c28;
     --filter-form-arrow: var(--dropdown-arrow-color);
 
     // Auth
@@ -59,4 +59,39 @@ html.dark {
     // Form
     --form-border-color: #b9babe;
     --form-text-color: var(--auth-intro-text-color);
+
+    // Product detail
+    --product-detail-bg: #292e39;
+    --product-detail-info-bg: var(--header-bg-color);
+    --product-detail-info-content-bg: transparent;
+    --product-detail-tag-bg: var(--body-bg);
+
+    @include abstrasts.screen(md) {
+        --product-detail-bg: transparent;
+        --product-detail-info-content-bg: var(--header-bg-color);
+        --product-detail-info-bg: transparent;
+    }
+
+    --prod-info-heading-color: var(--form-border-color);
+    --prod-prop-title-color: #eee;
+    --prod-info-price-color: var(--prod-prop-title-color);
+    --prod-info-total-price-color: var(--prod-info-price-color);
+
+    // Breadcrumbs
+    --breadcrumbs-bg: var(--header-bg-color);
+    --breadcrumbs-shadow: rgba(23, 28, 40, 0.2);
+
+    @include abstrasts.screen(md) {
+        --breadcrumbs-bg: var(--header-bg-color);
+    }
+
+    // Search bar
+    --search-bar-bg: var(--header-bg-color);
+    --search-bar-input-color: #b9babe;
+
+    // Review card
+    --review-card-bg: var(--header-bg-color);
+
+    // Text content
+    --text-content-hr-bg: #3e4043;
 }
