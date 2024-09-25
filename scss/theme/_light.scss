@@ -17,6 +17,11 @@ html {
         --header-shadow-color: rgba(237, 237, 246, 0.2);
     }
 
+    // Header / action dropdown
+    --header-act-dropdown-bg: #fff;
+    --header-act-dropdown-shadow: rgba(200, 200, 200, 0.4);
+    --header-act-dropdown-border-color: #d2d1d6;
+
     // Dropdown
     --dropdown-bg-color: #fff;
     --dropdown-shadow-color: rgba(200, 200, 200, 0.4);
@@ -56,6 +61,9 @@ html {
     // Form
     --form-border-color: #d2d1d6;
     --form-text-color: #9e9da8;
+    --form-select-dialog-shadow: rgba($color: #000000, $alpha: 0.15);
+    --form-select-dialog-bg: #fff;
+    --form-option-hover-bg: #ebebeb;
 
     // Product detail
     --product-detail-bg: #fff;
@@ -94,4 +102,16 @@ html {
 
     // Text content
     --text-content-hr-bg: #ebebeb;
+
+    // Checkout
+    --checkout-breadcrumbs-bg: #fff;
+    --checkout-cart-info-bg: #fff;
+    --checkout-cart-info-shadow: rgba(237, 237, 246, 0.2);
+    --checkout-border-color: #d2d1d6;
+    --checkout-gift-shadow: rgba(237, 237, 246, 0.2);
+    --checkout-payment-item-bg: #f6f6f6;
+
+    // Dialog
+    --dialog-bg: #fff;
+    --dialog-shadow: rgba(237, 237, 246, 0.2);
 }
