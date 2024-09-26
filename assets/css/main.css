@@ -4046,7 +4046,20 @@ html {
   gap: 30px;
   justify-content: space-between;
 }
+.cart-info__back-arrow {
+  width: 50px;
+  padding-right: 20px;
+  position: relative;
+  top: 4px;
+  translate: 0;
+  transition: translate 0.2s;
+}
+.cart-info__back-arrow:hover {
+  translate: -4px;
+}
 .cart-info__heading {
+  display: flex;
+  align-items: center;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 141.667%;
@@ -4591,6 +4604,15 @@ html {
 }
 .profile__desc {
   margin-bottom: 16px;
+}
+
+.form-card__bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+.form-card__btn-text {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */
